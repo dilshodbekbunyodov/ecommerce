@@ -1,0 +1,103 @@
+.border__dash {
+    border: 1px dashed #b3b3b3;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.border__dash:last-child {
+    margin-bottom: 100px;
+}
+.information {
+    background: #ede9e9;
+    padding: 53px;
+}
+.information .delivery {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.information .delivery h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+.information .delivery p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    color: #666;
+    margin-left: 20px;
+}
+.information h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000;
+    margin-bottom: 40px;
+}
+.information .labels input {
+    height: 39px;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 12px;
+}
+
+.information .labels select {
+    height: 39px;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 12px;
+}
+.information .labels input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    color: #c4c4c4;
+}
+.ordering {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    height: 40px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    width: 211px;
+    margin-top: 30px;
+    background: #003466;
+}
+
+.brands h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 54px;
+    color: #000;
+    margin-bottom: 68px;
+}
+.blue__btn2 {
+    margin: 0 auto;
+    background: #003466!important;
+    border: 1px solid #003466;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #fff!important;
+}

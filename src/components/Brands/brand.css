@@ -1,0 +1,108 @@
+.brands {
+    text-align: center;
+    margin-top: 55px;
+}
+.brands h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 54px;
+    color: #000;
+    margin-bottom: 68px;
+}
+.brands__carousel {
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.brands__carousel .item .item_border {
+    @apply transition
+}
+
+.brands__carousel .item:hover .item_border{
+    @apply shadow-2xl border-0
+}
+
+.brands__carousel .item p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #000;
+    margin-top: 10px;
+}
+.brands__carousel .item .item_border {
+    padding: 27px;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+}
+.brands__carousel .item .item_border img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.images {
+    position: relative;
+    margin-bottom: 40px;
+}
+.images .bg_gradient {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    right: 15px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+.images .bg_gradient:hover p {
+    margin-top: -24px;
+}
+.images .bg_gradient p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100px;
+    transition: all 0.4s;
+    color: #979797;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 15px;
+}
+.images img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width: 600px) {
+    .columns {
+        width: 100% !important;
+    }
+    .brands h1 {
+        font-size: 30px;
+    }
+    .bg_gradient {
+        left: 0 !important;
+        width: 100% !important;
+    }
+    .images .bg_gradient p {
+        margin-top: 30px;
+        line-height: unset;
+    }
+    .images .bg_gradient:hover p {
+        margin-top: unset;
+    }
+    .images img {
+        width: 100%;
+    }
+}
+

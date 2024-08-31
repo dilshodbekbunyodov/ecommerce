@@ -1,0 +1,268 @@
+.Modal__Style {
+    padding: 20px 19px;
+}
+
+.Modal__Style .modal-content {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+
+.Modal__Style .modal-content .fa-times {
+    color: #003466;
+    margin-left: auto;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+}
+
+.Modal__Style .modal-content .modal-body .table__basket {
+    padding: 0 73px;
+    height: 50px;
+    background: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.Modal__Style .modal-content .modal-body .table__basket li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #666;
+}
+
+.Modal__Style .modal-content .modal-body .btn__dark {
+    background: #000;
+    height: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.Modal__Style .modal-content .modal-body h5 {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.Modal__Style .modal-content .modal-body label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #003466;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.Modal__Style .modal-content .modal-body input {
+    background: #fff;
+    border: 1px solid #003466;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.Modal__Style .modal-content .modal-body input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #003466;
+}
+
+.Modal__Style .modal-content .modal-body button {
+    height: 40px;
+    width: 100%;
+    background: #003466;
+    border: 1px solid #003466;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #fff;
+}
+
+.Modal__Style .modal-content .modal-body .password__input {
+    position: relative;
+    cursor: pointer;
+}
+
+.Modal__Style .modal-content .modal-body .password__input .btnpass {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+.basket_ordering {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basket_ordering .clothe {
+    display: flex;
+    align-items: center;
+}
+
+.basket_ordering .clothe img {
+    width: 74px;
+    height: 81px;
+}
+
+.basket_ordering .clothe h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.basket_ordering .clothe h6 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+    color: #000;
+    width: 150px;
+}
+
+.basket_ordering .calculation {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+}
+
+.basket_ordering .calculation .minus {
+    width: 35px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ede9e9;
+}
+
+.basket_ordering .calculation .plus {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background: #003466 !important;
+}
+
+.basket_ordering .total__cost h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000;
+}
+.modal__bas .modal-content {
+    width: 900px;
+}
+
+@media (max-width: 600px) {
+    .border__dash {
+        width: auto;
+        overflow: auto;
+    }
+
+    .basket_ordering {
+        width: 900px;
+    }
+
+    .table__basket {
+        width: 900px;
+    }
+
+    .modal__bas .modal-content {
+        width: 100%;
+    }
+
+    .modal__bas .modal-body {
+        overflow: auto;
+    }
+
+    .res__modal__wi {
+        width: 900px;
+    }
+}
+
+
+.modal-backdrop {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    z-index: 10;
+    top: 0;
+    transition: all .7s!important;
+}
+
+.modal {
+    position: fixed;
+    background: #fff;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 1.75rem auto;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1060;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    transition: all .7s;
+}
+
+.hide {
+    position: fixed;
+    background: #fff;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 1.75rem auto;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1060;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    transition: all .7s;
+}
