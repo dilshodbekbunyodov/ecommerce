@@ -50,30 +50,30 @@ const validateForm = () => {
 </script>
 
 <template>
-  <div :class="{'Modal__Style z-20': true, 'modal': auth, 'hide': !auth}">
-    <div class="modal-content">
-      <div class="far fa-times mt-1 mr-1" @click="emit('update:auth')"></div>
+   <div :class="{'Modal__Style z-20': true, 'modal': auth, 'hide': !auth}">
+     <div class="modal-content">
+       <div class="far fa-times mt-1 mr-1" @click="emit('update:auth')"></div>
 
-      <div class="modal-body">
-        <div class="!mb-[15px]">
-          <input type="text" class="!mb-0" placeholder="Имя пользователя" v-model="register.username" @input="validateUsername">
-          <small v-if="usernameError" class="text-[#EA5455]">{{ usernameError }}</small>
-        </div>
+       <div class="modal-body">
+         <div class="!mb-[15px]">
+           <input type="text" class="!mb-0" placeholder="Имя пользователя" v-model="register.username" @input="validateUsername">
+           <small v-if="usernameError" class="text-[#EA5455]">{{ usernameError }}</small>
+         </div>
 
-        <div class="!mb-[15px]">
-          <input type="password" class="!mb-0" placeholder="Ваш пароль" v-model="register.password" @input="validatePassword">
-          <small v-if="passwordError" class="text-[#EA5455]">{{ passwordError }}</small>
-        </div>
+         <div class="!mb-[15px]">
+           <input type="password" class="!mb-0" placeholder="Ваш пароль" v-model="register.password" @input="validatePassword">
+           <small v-if="passwordError" class="text-[#EA5455]">{{ passwordError }}</small>
+         </div>
 
-        <div class="!mb-[15px]">
-          <input type="password" placeholder="Подтвердите пароль" class="!mb-0" v-model="register.confirmPassword" @input="validateConfirmPassword">
-          <small v-if="confirmPasswordError" class="text-[#EA5455]">{{ confirmPasswordError }}</small>
-        </div>
+         <div class="!mb-[15px]">
+           <input type="password" placeholder="Подтвердите пароль" class="!mb-0" v-model="register.confirmPassword" @input="validateConfirmPassword">
+           <small v-if="confirmPasswordError" class="text-[#EA5455]">{{ confirmPasswordError }}</small>
+         </div>
 
-        <button @click="validateForm">РЕГИСТРАЦИЯ</button>
-      </div>
-    </div>
-  </div>
+         <button @click="validateForm">РЕГИСТРАЦИЯ</button>
+       </div>
+     </div>
+   </div>
 
-  <div :class="auth ? 'modal-backdrop' : 'transition'" @click.stop="emit('update:auth')"/>
+   <div :class="auth ? 'modal-backdrop' : 'transition'" @click.stop="emit('update:auth')"/>
 </template>

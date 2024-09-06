@@ -27,7 +27,7 @@ const addToBasket = (value) => {
     <!----------------------------------products------------------------------------------->
     <div class="container">
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div v-for="(item, index) in productArr" :key="index">
+        <div v-for="(item, index) in productArr" :key="index" class="dad hover:shadow-lg transition">
           <div class="columns relative group cursor-pointer" @click="openDetail(item)">
             <img :src="item.img" alt="product_image"/>
             <div class="absolute top-0 bg-black/60 w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -70,7 +70,7 @@ const addToBasket = (value) => {
       <div class="brands mb-1"><h1>НОВАЯ КОЛЛЕКЦИЯ</h1></div>
 
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div v-for="(item, index) in productArr.slice(0, 4)" :key="index">
+        <div v-for="(item, index) in productArr.slice(0, 4)" :key="index" class="dad hover:shadow-lg transition">
           <div class='columns relative group cursor-pointer' @click="openDetail(item)">
             <img :src="item.img" alt="product_image"/>
             <div

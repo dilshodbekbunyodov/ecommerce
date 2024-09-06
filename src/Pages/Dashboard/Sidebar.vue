@@ -26,7 +26,7 @@ const isFirst = (item) => routes.value.indexOf(item) === 0;
 </script>
 
 <template>
-  <div class="!w-[270px] h-screen bg-[#003466]">
+  <div class="!w-[270px] fixed left-0 z-20 h-screen bg-[#003466]">
     <div class="px-8 my-6 cursor-pointer">
       <img src="../../assets/img.png" alt="logo">
     </div>

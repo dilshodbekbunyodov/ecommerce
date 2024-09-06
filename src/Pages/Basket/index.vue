@@ -1,8 +1,7 @@
 <script setup>
 import {useProductStore} from "../../store/index.js";
-import {computed} from "vue";
-import './index.css'
 import {useRouter} from "vue-router";
+import './index.css'
 
 const store = useProductStore()
 const router = useRouter()
@@ -10,15 +9,6 @@ const router = useRouter()
 const removeProduct = (index) => {
   store.basket.splice(index, 1)
 }
-
-const uniqueBasketItems = computed(() => {
-  const seen = new Set();
-  return store.basket.filter(item => {
-    const duplicate = seen.has(item.id);
-    seen.add(item.id);
-    return !duplicate;
-  });
-});
 
 const submitOrders = () => {
   if (store.basket && store.basket.length) {
@@ -101,7 +91,7 @@ const submitOrders = () => {
     </div>
 
 
-    <!--  --------------------ВЫБЕРИТЕ ВАРИАНТ ДОСТАВКИ-------------------------->
+    <!----------------------ВЫБЕРИТЕ ВАРИАНТ ДОСТАВКИ-------------------------->
     <div v-if="store.basket && store.basket.length" class="information">
       <div class="container">
         <div class="row">

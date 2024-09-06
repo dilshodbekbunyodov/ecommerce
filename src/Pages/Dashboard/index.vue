@@ -141,11 +141,11 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="flex">
+  <div class="ml-[270px]">
     <Sidebar/>
 
-    <div class="!w-[100%]">
-      <div class="bg-[#F8FAFC] p-3 flex pt-5 gap-3">
+    <div class="!w-[100%] p-3 bg-[#F8FAFC] h-[100vh]">
+      <div class="  flex pt-5 gap-3">
         <div class="w-[50%]">
           <div id="main" class="h-[350px] bg-white shadow-lg p-4 rounded-md"/>
         </div>
@@ -155,7 +155,7 @@ onUnmounted(() => {
         </div>
       </div>
 
-      <div id="allId" class="h-[500px] bg-white shadow-lg p-4 rounded-md"/>
+      <div id="allId" class="h-[500px] mt-3 bg-white shadow-lg p-4 rounded-md"/>
     </div>
   </div>
 </template>

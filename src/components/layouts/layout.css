@@ -62,11 +62,11 @@
     color: #000;
 }
 
-.header .navbar_nav .hover a:hover:after {
+.header .navbar_nav .hover:hover:after {
     opacity: 1;
     width: 100%;
 }
-.header .navbar_nav .hover a:after {
+.header .navbar_nav .hover:after {
     content: '';
     display: block;
     border-top: 2px solid;
